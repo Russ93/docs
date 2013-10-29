@@ -1,0 +1,9 @@
+* {
+	font-family: Avenir, Helvetica, Arial, sans-serif;
+	color: 333;
+	background-color: #fefefe;
+}
+body{
+	width: 100%;
+	height: 700px;
+}
