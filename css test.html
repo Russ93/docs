@@ -1,0 +1,128 @@
+<!DOC html>
+<html>
+<head>
+<title> test </title>
+<style>
+.window{
+	font: .75em sans-serif;
+    border-radius: 5px;
+    border: solid 1px #ddd;
+    width: 300px;
+    overflow: hidden;
+}
+.window > *{
+	padding: 5px;
+}
+h3{
+    font-size: 1em;
+    color: #6e6e6e;
+    margin: 0;
+    background: linear-gradient(to bottom, #f9f9f9 0%,#e9e9e9 100%);
+    background: -moz-linear-gradient(to bottom, #f9f9f9 0%,#e9e9e9 100%);
+    background: -o-linear-gradient(to bottom, #f9f9f9 0%,#e9e9e9 100%);
+    background: -webkit-linear-gradient(to bottom, #f9f9f9 0%,#e9e9e9 100%);
+    background: -ms-linear-gradient(to bottom, #f9f9f9 0%,#e9e9e9 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#e9e9e9',GradientType=0 );/*IE 6-9*/
+}
+img {
+    float: left;
+    width: 50px;
+    height: 50px;
+    padding: 2px;
+    border: solid 1px #999;
+    margin-right: 10px;
+}
+.rmv {
+	margin: 5px 5px 0 0;
+    background: url('img/remove.png') no-repeat;
+    float: right;
+    color: #6e6e6e;
+}
+ul{
+	padding: 0;
+	margin: 0;
+}
+li{
+	overflow: hidden;
+    list-style: none;
+}
+li div{
+    width: 80%;
+    float: left;
+    margin: 5px;
+}
+.connect{
+    background: url('img/plus.png') no-repeat;
+    margin: 2.25px 0 0 -17.5px;
+    float: left;
+}
+.connect:first-letter{
+	font-size: 1.5em;
+	padding-right: 2px;
+	color: #fff;
+}
+p{
+	margin: 0;
+}
+a{
+	font-size: 0.875em;
+    color: #056eab;
+    float: right;
+    text-decoration: none;
+}
+.circle{
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	border: solid .5px #016699;
+	display: inline-block;
+	background-image: linear-gradient(to bottom, #9dc7e1 0%,#016699 100%);
+	background-image: -moz-linear-gradient(to bottom, #9dc7e1 0%,#016699 100%);
+	background-image: -webkit-linear-gradient(to bottom, #9dc7e1 0%,#016699 100%);
+	background-image: -o-linear-gradient(to bottom, #9dc7e1 0%,#016699 100%);
+	background-image: -ms-linear-gradient(to bottom, #9dc7e1 0%,#016699 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9dc7e1', endColorstr='#016699',GradientType=0 );/*IE 6-9*/
+}
+</style>
+</head>
+<body>
+<div class='window'>
+<h3>People You May Know</h3>
+<ul>
+ <li>
+     <div>
+         <img src="img.png" />
+         <p><strong>Jack Smith,</strong>software Engineer at EMC</p>
+         <div class="circle"></div>
+         <a href="#" class="connect">&#43; Connect</a>
+     </div>
+         <a href='#' class='rmv'>&#10006</a>
+ </li>
+  <li>
+     <div>
+         <img src="img.png" />
+         <p><strong>Maggie Jackson,</strong>Customer Service at LinkedIn</p>
+         <div class="circle"></div>
+         <a href="#" class="connect">&#43; Connect</a>
+     </div>
+         <a href='#' class='rmv'>&#10006</a>
+ </li>
+ </li>
+  <li>
+     <div>
+         <img src="img.png" />
+         <p><strong>Jack Smith,</strong>Office Manager at Twitter</p>
+         <div class="circle"></div>
+         <a href="#" class="connect">&#43; Connect</a>
+     </div>
+         <a href='#' class='rmv'>&#10006</a>
+ </li>
+</ul>
+
+<a href='#'>See More&#187;</a>
+<script>
+
+</script>
+</div>
+</body>
+</html>
