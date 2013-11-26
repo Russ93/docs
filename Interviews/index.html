@@ -34,7 +34,6 @@ img {
 }
 .rmv {
 	margin: 5px 5px 0 0;
-    background: url('img/remove.png') no-repeat;
     float: right;
     color: #6e6e6e;
 }
@@ -52,7 +51,6 @@ li div{
     margin: 5px;
 }
 .connect{
-    background: url('img/plus.png') no-repeat;
     margin: 2.25px 0 0 -17.5px;
     float: left;
 }
@@ -84,6 +82,7 @@ a{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9dc7e1', endColorstr='#016699',GradientType=0 );/*IE 6-9*/
 }
 </style>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 </head>
 <body>
 <div class='window'>
@@ -91,16 +90,16 @@ a{
 <ul>
  <li>
      <div>
-         <img src="img.png" />
+         <img src="img.svg" />
          <p><strong>Jack Smith,</strong> Software Engineer at EMC</p>
          <div class="circle"></div>
          <a href="#" class="connect">&#43; Connect</a>
      </div>
-         <a href='#' class='rmv'>&#10006</a>
+     <a href='#' class='rmv'>&#10006</a>
  </li>
   <li>
      <div>
-         <img src="img.png" />
+         <img src="img.svg" />
          <p><strong>Maggie Jackson,</strong> Customer Service at LinkedIn</p>
          <div class="circle"></div>
          <a href="#" class="connect">&#43; Connect</a>
@@ -110,7 +109,7 @@ a{
  </li>
   <li>
      <div>
-         <img src="img.png" />
+         <img src="img.svg" />
          <p><strong>Jack Smith,</strong> Office Manager at Twitter</p>
          <div class="circle"></div>
          <a href="#" class="connect">&#43; Connect</a>
@@ -121,7 +120,11 @@ a{
 
 <a href='#'>See More&#187;</a>
 <script>
-
+(function(){
+	$('.rmv').click(function(){
+		console.log($(this).parent);
+	});
+})();
 </script>
 </div>
 </body>
